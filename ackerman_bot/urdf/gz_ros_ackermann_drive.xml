@@ -1,0 +1,27 @@
+<gazebo>
+  <plugin name="ackermann_drive" filename="libgz_ros_ackermann_drive.so">
+
+    <ros>
+      <namespace>/</namespace>
+    </ros>
+
+    <topic>/cmd_vel</topic>
+
+    <!-- Steering joints -->
+    <left_steering_joint>FL_STEERING_JOINT</left_steering_joint>
+    <right_steering_joint>FR_STEERING_JOINT</right_steering_joint>
+
+    <!-- DRIVE WHEELS (REAR) -->
+    <rear_left_joint>BL_WHEEL_JOINT</rear_left_joint>
+    <rear_right_joint>BR_WHEEL_JOINT</rear_right_joint>
+
+    <!-- FIX STEERING DIRECTION -->
+    <left_steering_multiplier>1.0</left_steering_multiplier>
+    <right_steering_multiplier>-1.0</right_steering_multiplier>
+
+    <wheelbase>0.3</wheelbase>
+    <track_width>0.2</track_width>
+    <steering_limit>0.5</steering_limit>
+
+  </plugin>
+</gazebo>

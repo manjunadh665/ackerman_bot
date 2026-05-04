@@ -1,0 +1,13 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 50
+
+ackermann_steering_controller:
+  ros__parameters:
+    left_wheel_names: ["FL_WHEEL_JOINT", "BL_WHEEL_JOINT"]
+    right_wheel_names: ["FR_WHEEL_JOINT", "BR_WHEEL_JOINT"]
+    left_steering_names: ["FL_STEERING_JOINT"]
+    right_steering_names: ["FR_STEERING_JOINT"]
+    wheel_separation: 0.2186
+    wheel_radius: 0.05027
+    wheel_base: 0.295
